@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Benutzer</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <table>
+            <% for(var i=0; i<result.length; i++) {%>
+                <tr>
+                    <td><%= result[i]["FirstName"] %> </td>      
+                    <td><%= result[i]["LastName"] %> </td>   
+                </tr>
+            <% } %>
+    </table>
+
+
+
+</body>
+
+</html>

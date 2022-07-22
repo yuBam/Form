@@ -1,0 +1,21 @@
+<script>
+    function myFunction() {
+      var x = document.getElementById("pass");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+</script>
+    
+
+
+<form action="/login" method="post">
+    <input type="text" placeholder="Email or username" name="username" id="user">
+    <input type="password" name="pass" id="pass" placeholder="password">
+    <input type="checkbox" onclick="myFunction()">Show Password
+
+
+    <button type="submit">Sign in</button>
+</form>
